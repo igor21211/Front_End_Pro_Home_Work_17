@@ -67,7 +67,7 @@ const filterBalance = (array) => {
     for (let i = 0; i <array.length ; i++) {
         let balance = parseFloat(array[i].balance.replace(/[^\d.]/g, ''));
         if(balance > 2000){
-            arrResult[i] = array[i];
+            arrResult[i] = array[i].phone;
         }
     }
     return arrResult;
